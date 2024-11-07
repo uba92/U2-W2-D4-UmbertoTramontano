@@ -1,0 +1,20 @@
+
+@import './scss/functions';
+@import './scss/variables';
+
+
+$new-success: #7CC99A;
+$headline-color: #7153FA;
+$bg-icons: #F9EEDB;
+$icons-color:  #c28928;
+
+$new-theme-colors: (
+    'success': $new-success,
+    'headline': $headline-color,
+    'bg-icons': $bg-icons,
+    'icons-color': $icons-color,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import './scss/bootstrap.scss';
